@@ -1,6 +1,7 @@
 package id.ac.polinema.recyclerviewsangatsederhana;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -42,6 +43,6 @@ public class MainActivity extends AppCompatActivity {
         SuperHeroAdapter superHeroAdapter = new SuperHeroAdapter(listSuperHero);
 
         rvSuperHero.setAdapter(superHeroAdapter);
-        rvSuperHero.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        rvSuperHero.setLayoutManager(new GridLayoutManager(this, 2));
     }
 }
